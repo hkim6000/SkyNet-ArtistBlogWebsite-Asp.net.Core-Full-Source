@@ -1,0 +1,31 @@
+<div class="wk-site" id="wk-site" data-page="Works" data-theme="{plhd_theme}" style="{plhd_style}">
+<header class="wk-head">
+    <div class="wk-head-row">
+        <a class="wk-brand" href="Home" id="wk-brand">{plhd_brand}</a>
+        <nav class="wk-nav" id="wk-nav" aria-label="Main">
+            <div class="wk-nav-top"><span>Menu</span><button type="button" class="wk-ibtn" aria-label="Close" onclick="WorksJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="wk-menu"><li><a class="wk-ml wk-on" href="Works">Works</a></li><li><a class="wk-ml" href="Journal">Journal</a></li><li><a class="wk-ml" href="About">About</a></li><li><a class="wk-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <button type="button" class="wk-ibtn wk-theme" aria-label="Light or dark" onclick="WorksJs.toggleTheme()"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+        <button type="button" class="wk-ibtn wk-burger" aria-label="Menu" onclick="WorksJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+    <div class="wk-scrim" id="wk-scrim" onclick="WorksJs.closeNav()"></div>
+</header>
+<div class="wk-demo-bar" id="wk-demo-bar"></div>
+<main class="wk-main" id="wk-main">{plhd_main}</main>
+<footer class="wk-foot">
+    <div class="wk-foot-in">
+        <div><b class="wk-foot-name" id="wk-foot-name">{plhd_name}</b><p id="wk-foot-tag">{plhd_tagline}</p></div>
+        <div class="wk-foot-r">
+            <div class="wk-foot-links"><a href="Works">Works</a><a href="Journal">Journal</a><a href="About">About</a><a href="Contact">Contact</a><a href="AdminLogin">Admin</a></div>
+            <div class="wk-foot-soc" id="wk-foot-soc">{plhd_social}</div>
+        </div>
+    </div>
+    <div class="wk-foot-b">&copy; 2026 {plhd_name} &middot; A fictional demo built with the SkyNet Framework</div>
+</footer>
+<div class="wk-toast" id="wk-toast" role="status" aria-live="polite"></div>
+<div class="wk-viewer" id="wk-viewer" role="dialog" aria-modal="true" aria-label="Photograph">
+    <button type="button" class="wk-vbtn wk-vclose" aria-label="Close" onclick="WorksJs.closeView()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="wk-vbody" id="wk-vbody"></div>
+</div>
+</div>

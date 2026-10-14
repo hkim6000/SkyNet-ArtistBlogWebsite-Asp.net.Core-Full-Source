@@ -1,0 +1,16 @@
+<div class="al-site al-login" id="al-site" data-theme="light" style="{plhd_style}">
+<img class="al-lbg" src="images/site/hero.webp" alt="">
+<main class="al-main al-lwrap">
+    <form class="al-lcard" onsubmit="return AdminLoginJs.signIn()" novalidate>
+        <a class="al-lbrand" href="Home">{plhd_brand}</a>
+        <h1>Studio admin</h1>
+        <p class="al-lsub">Sign in to edit pages, photographs and the journal.</p>
+        {plhd_demo}
+        <label class="al-field" for="al-user"><span>User name</span><input type="text" id="al-user" maxlength="40" autocomplete="username" value="{plhd_user}"></label>
+        <label class="al-field" for="al-pass"><span>Password</span><input type="password" id="al-pass" maxlength="100" autocomplete="current-password" value="{plhd_pass}"></label>
+        <em class="al-err" id="al-e-pass"></em>
+        <button type="submit" class="al-btn al-btn-wide">Sign in</button>
+        <a class="al-lback" href="Home">&larr; Back to the site</a>
+    </form>
+</main>
+</div>

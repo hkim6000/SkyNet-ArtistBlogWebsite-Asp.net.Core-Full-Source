@@ -1,0 +1,16 @@
+<div class="am-site am-admin" id="am-site" data-theme="light" style="{plhd_style}">
+<header class="am-ahead">
+    <button type="button" class="am-ibtn am-burger" aria-label="Menu" onclick="AdminMessagesJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    <a class="am-abrand" href="Admin"><b>Studio</b> admin</a>
+    <span class="am-demo" id="am-demo"></span>
+    <a class="am-view" href="Home" target="_blank" rel="noopener">View site</a>
+    <button type="button" class="am-out" onclick="AdminMessagesJs.signOut()">Sign out</button>
+</header>
+<aside class="am-side" id="am-nav" aria-label="Admin">
+    <div class="am-nav-top"><span>Admin</span><button type="button" class="am-ibtn" aria-label="Close" onclick="AdminMessagesJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <ul class="am-amenu"><li><a class="am-al" href="Admin">Dashboard<i class="am-cnt" id="am-cnt-Admin"></i></a></li><li><a class="am-al" href="AdminLayout">Pages<i class="am-cnt" id="am-cnt-AdminLayout"></i></a></li><li><a class="am-al" href="AdminPosts">Journal<i class="am-cnt" id="am-cnt-AdminPosts"></i></a></li><li><a class="am-al" href="AdminWorks">Works<i class="am-cnt" id="am-cnt-AdminWorks"></i></a></li><li><a class="am-al" href="AdminComments">Comments<i class="am-cnt" id="am-cnt-AdminComments"></i></a></li><li><a class="am-al am-on" href="AdminMessages">Messages<i class="am-cnt" id="am-cnt-AdminMessages"></i></a></li><li><a class="am-al" href="AdminSettings">Settings<i class="am-cnt" id="am-cnt-AdminSettings"></i></a></li></ul>
+</aside>
+<div class="am-scrim" id="am-scrim" onclick="AdminMessagesJs.closeNav()"></div>
+<div class="am-toast" id="am-toast" role="status" aria-live="polite"></div>
+<main class="am-amain" id="am-main"><p class="am-loading">Loading&hellip;</p></main>
+</div>

@@ -1,0 +1,28 @@
+<div class="ab-site" id="ab-site" data-page="About" data-theme="{plhd_theme}" style="{plhd_style}">
+<header class="ab-head">
+    <div class="ab-head-row">
+        <a class="ab-brand" href="Home" id="ab-brand">{plhd_brand}</a>
+        <nav class="ab-nav" id="ab-nav" aria-label="Main">
+            <div class="ab-nav-top"><span>Menu</span><button type="button" class="ab-ibtn" aria-label="Close" onclick="AboutJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+            <ul class="ab-menu"><li><a class="ab-ml" href="Works">Works</a></li><li><a class="ab-ml" href="Journal">Journal</a></li><li><a class="ab-ml ab-on" href="About">About</a></li><li><a class="ab-ml" href="Contact">Contact</a></li></ul>
+        </nav>
+        <button type="button" class="ab-ibtn ab-theme" aria-label="Light or dark" onclick="AboutJs.toggleTheme()"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+        <button type="button" class="ab-ibtn ab-burger" aria-label="Menu" onclick="AboutJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+    <div class="ab-scrim" id="ab-scrim" onclick="AboutJs.closeNav()"></div>
+</header>
+<div class="ab-demo-bar" id="ab-demo-bar"></div>
+<main class="ab-main" id="ab-main">{plhd_main}</main>
+<footer class="ab-foot">
+    <div class="ab-foot-in">
+        <div><b class="ab-foot-name" id="ab-foot-name">{plhd_name}</b><p id="ab-foot-tag">{plhd_tagline}</p></div>
+        <div class="ab-foot-r">
+            <div class="ab-foot-links"><a href="Works">Works</a><a href="Journal">Journal</a><a href="About">About</a><a href="Contact">Contact</a><a href="AdminLogin">Admin</a></div>
+            <div class="ab-foot-soc" id="ab-foot-soc">{plhd_social}</div>
+        </div>
+    </div>
+    <div class="ab-foot-b">&copy; 2026 {plhd_name} &middot; A fictional demo built with the SkyNet Framework</div>
+</footer>
+<div class="ab-toast" id="ab-toast" role="status" aria-live="polite"></div>
+
+</div>

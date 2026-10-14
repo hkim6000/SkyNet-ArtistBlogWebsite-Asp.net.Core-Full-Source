@@ -1,0 +1,684 @@
+{
+  "settings": {
+    "name": "Iris Calloway",
+    "tagline": "Landscape photography and field notes",
+    "accent": "#C8794A",
+    "theme": "light",
+    "email": "studio@iriscalloway.example",
+    "location": "Larch Harbour",
+    "social": [
+      {
+        "key": "instagram",
+        "url": "https://www.instagram.com/iriscalloway"
+      },
+      {
+        "key": "youtube",
+        "url": "https://www.youtube.com/@iriscalloway"
+      },
+      {
+        "key": "x",
+        "url": "https://x.com/iriscalloway"
+      },
+      {
+        "key": "facebook",
+        "url": "https://www.facebook.com/iriscalloway"
+      },
+      {
+        "key": "linkedin",
+        "url": "https://www.linkedin.com/in/iriscalloway"
+      },
+      {
+        "key": "tiktok",
+        "url": "https://www.tiktok.com/@iriscalloway"
+      },
+      {
+        "key": "pinterest",
+        "url": "https://www.pinterest.com/iriscalloway"
+      },
+      {
+        "key": "threads",
+        "url": "https://www.threads.net/@iriscalloway"
+      },
+      {
+        "key": "behance",
+        "url": "https://www.behance.net/iriscalloway"
+      },
+      {
+        "key": "flickr",
+        "url": "https://www.flickr.com/photos/iriscalloway"
+      },
+      {
+        "key": "vimeo",
+        "url": "https://vimeo.com/iriscalloway"
+      }
+    ]
+  },
+  "series": [
+    {
+      "key": "quiet-weather",
+      "title": "Quiet Weather",
+      "text": "Fog, snow and the slow hour before the sun clears the ridges."
+    },
+    {
+      "key": "salt-and-light",
+      "title": "Salt \u0026 Light",
+      "text": "Coastlines from the shore and from the air, mostly at the edges of the day."
+    },
+    {
+      "key": "after-dark",
+      "title": "After Dark",
+      "text": "Cities after rain, small towns under big skies, and the light we leave on."
+    }
+  ],
+  "works": [
+    {
+      "id": "first-light-over-the-ridges",
+      "title": "First Light over the Ridges",
+      "series": "quiet-weather",
+      "year": 2025,
+      "full": "images/works/full/first-light-over-the-ridges.webp",
+      "thumb": "images/works/thumbs/first-light-over-the-ridges.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Six ridges, one long exposure, the valley still asleep."
+    },
+    {
+      "id": "still-lake-morning",
+      "title": "Still Lake, Morning",
+      "series": "quiet-weather",
+      "year": 2025,
+      "full": "images/works/full/still-lake-morning.webp",
+      "thumb": "images/works/thumbs/still-lake-morning.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "No wind for once. The lake held the hills perfectly still."
+    },
+    {
+      "id": "fog-in-the-pines",
+      "title": "Fog in the Pines",
+      "series": "quiet-weather",
+      "year": 2024,
+      "full": "images/works/full/fog-in-the-pines.webp",
+      "thumb": "images/works/thumbs/fog-in-the-pines.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "Walking into the cloud on the north trail."
+    },
+    {
+      "id": "blue-hour-valley",
+      "title": "Blue Hour Valley",
+      "series": "quiet-weather",
+      "year": 2024,
+      "full": "images/works/full/blue-hour-valley.webp",
+      "thumb": "images/works/thumbs/blue-hour-valley.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Twenty minutes after sunset, when everything turns the same blue."
+    },
+    {
+      "id": "warm-forest-dawn",
+      "title": "Warm Forest Dawn",
+      "series": "quiet-weather",
+      "year": 2025,
+      "full": "images/works/full/warm-forest-dawn.webp",
+      "thumb": "images/works/thumbs/warm-forest-dawn.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "The fog burned orange for about four minutes."
+    },
+    {
+      "id": "lone-tree-in-snow",
+      "title": "Lone Tree in Snow",
+      "series": "quiet-weather",
+      "year": 2023,
+      "full": "images/works/full/lone-tree-in-snow.webp",
+      "thumb": "images/works/thumbs/lone-tree-in-snow.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "The same larch I have photographed every winter for six years."
+    },
+    {
+      "id": "blue-snowfield",
+      "title": "Blue Snowfield",
+      "series": "quiet-weather",
+      "year": 2024,
+      "full": "images/works/full/blue-snowfield.webp",
+      "thumb": "images/works/thumbs/blue-snowfield.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "Before the sun, snow is never white."
+    },
+    {
+      "id": "winter-ridges",
+      "title": "Winter Ridges",
+      "series": "quiet-weather",
+      "year": 2023,
+      "full": "images/works/full/winter-ridges.webp",
+      "thumb": "images/works/thumbs/winter-ridges.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "Ridge lines layered like paper in the cold."
+    },
+    {
+      "id": "salt-sunset",
+      "title": "Salt Sunset",
+      "series": "salt-and-light",
+      "year": 2025,
+      "full": "images/works/full/salt-sunset.webp",
+      "thumb": "images/works/thumbs/salt-sunset.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "The sea stack at Corran Head, as the tide turned."
+    },
+    {
+      "id": "pastel-horizon",
+      "title": "Pastel Horizon",
+      "series": "salt-and-light",
+      "year": 2024,
+      "full": "images/works/full/pastel-horizon.webp",
+      "thumb": "images/works/thumbs/pastel-horizon.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "A flat calm evening; sea and sky almost the same colour."
+    },
+    {
+      "id": "low-tide",
+      "title": "Low Tide",
+      "series": "salt-and-light",
+      "year": 2025,
+      "full": "images/works/full/low-tide.webp",
+      "thumb": "images/works/thumbs/low-tide.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Wet sand holds the sky for a few minutes after each wave."
+    },
+    {
+      "id": "tidal-patterns",
+      "title": "Tidal Patterns",
+      "series": "salt-and-light",
+      "year": 2024,
+      "full": "images/works/full/tidal-patterns.webp",
+      "thumb": "images/works/thumbs/tidal-patterns.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "From four hundred feet: channels the tide draws twice a day."
+    },
+    {
+      "id": "turquoise-lagoon",
+      "title": "Turquoise Lagoon",
+      "series": "salt-and-light",
+      "year": 2025,
+      "full": "images/works/full/turquoise-lagoon.webp",
+      "thumb": "images/works/thumbs/turquoise-lagoon.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "The lagoon at Saltmere from the coastal flight."
+    },
+    {
+      "id": "grey-squall",
+      "title": "Grey Squall",
+      "series": "salt-and-light",
+      "year": 2023,
+      "full": "images/works/full/grey-squall.webp",
+      "thumb": "images/works/thumbs/grey-squall.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "The squall line arrived ten minutes after this frame."
+    },
+    {
+      "id": "sea-stack-dawn",
+      "title": "Sea Stack at Dawn",
+      "series": "salt-and-light",
+      "year": 2024,
+      "full": "images/works/full/sea-stack-dawn.webp",
+      "thumb": "images/works/thumbs/sea-stack-dawn.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "Dawn behind the stack, waves smoothed by a two-minute exposure."
+    },
+    {
+      "id": "sandbar",
+      "title": "Sandbar",
+      "series": "salt-and-light",
+      "year": 2023,
+      "full": "images/works/full/sandbar.webp",
+      "thumb": "images/works/thumbs/sandbar.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Sandbars shift every season; this one is gone now."
+    },
+    {
+      "id": "city-after-rain",
+      "title": "City after Rain",
+      "series": "after-dark",
+      "year": 2025,
+      "full": "images/works/full/city-after-rain.webp",
+      "thumb": "images/works/thumbs/city-after-rain.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Every window doubled in the wet street."
+    },
+    {
+      "id": "blue-district",
+      "title": "Blue District",
+      "series": "after-dark",
+      "year": 2024,
+      "full": "images/works/full/blue-district.webp",
+      "thumb": "images/works/thumbs/blue-district.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "The harbour district at the blue hour, lens wide open."
+    },
+    {
+      "id": "night-over-the-hills",
+      "title": "Night over the Hills",
+      "series": "after-dark",
+      "year": 2025,
+      "full": "images/works/full/night-over-the-hills.webp",
+      "thumb": "images/works/thumbs/night-over-the-hills.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "The galaxy core rising over the moor in late summer."
+    },
+    {
+      "id": "town-glow",
+      "title": "Town Glow",
+      "series": "after-dark",
+      "year": 2024,
+      "full": "images/works/full/town-glow.webp",
+      "thumb": "images/works/thumbs/town-glow.webp",
+      "w": 1200,
+      "h": 1600,
+      "caption": "A small town\u0027s glow on the horizon, stars above it."
+    },
+    {
+      "id": "violet-crossing",
+      "title": "Violet Crossing",
+      "series": "after-dark",
+      "year": 2023,
+      "full": "images/works/full/violet-crossing.webp",
+      "thumb": "images/works/thumbs/violet-crossing.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Neon from the arcade turned the crossing violet."
+    },
+    {
+      "id": "moonlit-ridges",
+      "title": "Moonlit Ridges",
+      "series": "after-dark",
+      "year": 2025,
+      "full": "images/works/full/moonlit-ridges.webp",
+      "thumb": "images/works/thumbs/moonlit-ridges.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "Full moon, eight-second exposure, the ridges silver."
+    },
+    {
+      "id": "harbour-lights",
+      "title": "Harbour Lights",
+      "series": "after-dark",
+      "year": 2024,
+      "full": "images/works/full/harbour-lights.webp",
+      "thumb": "images/works/thumbs/harbour-lights.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "The ferry lights, out of focus on purpose."
+    },
+    {
+      "id": "star-trail-field",
+      "title": "Starfield",
+      "series": "after-dark",
+      "year": 2023,
+      "full": "images/works/full/star-trail-field.webp",
+      "thumb": "images/works/thumbs/star-trail-field.webp",
+      "w": 1600,
+      "h": 1067,
+      "caption": "A clear night far from any town."
+    }
+  ],
+  "posts": [
+    {
+      "slug": "chasing-fog-on-the-north-ridge",
+      "title": "Chasing fog on the north ridge",
+      "date": "2026-10-02",
+      "tags": [
+        "fog",
+        "mountains",
+        "field notes"
+      ],
+      "cover": "images/works/full/first-light-over-the-ridges.webp",
+      "excerpt": "Four mornings of alarms at 4:40 for one ten-minute window of light.",
+      "body": "\u003Cp\u003EFog forecasts are honest about one thing only: they are guesses. I drove up to the north ridge four mornings in a row, and three of them gave me a grey wall and a thermos of cold coffee.\u003C/p\u003E\u003Cp\u003EOn the fourth morning the cloud sat just below the summits. The ridges came out of it one by one, each a little paler than the last, and for about ten minutes the whole valley looked like layered paper.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/winter-ridges.webp\u0022 alt=\u0022Winter Ridges, 2023\u0022\u003E\u003Cfigcaption\u003EWinter Ridges, 2023\u003C/figcaption\u003E\u003C/figure\u003E\u003Ch2\u003EWhat made it work\u003C/h2\u003E\u003Cp\u003EI used a long lens to stack the ridges, and I underexposed by two thirds of a stop so the brightest fog kept its texture. Everything else was patience.\u003C/p\u003E",
+      "published": true,
+      "likes": 41
+    },
+    {
+      "slug": "the-larch-six-winters-on",
+      "title": "The larch, six winters on",
+      "date": "2026-09-18",
+      "tags": [
+        "snow",
+        "long project"
+      ],
+      "cover": "images/works/full/lone-tree-in-snow.webp",
+      "excerpt": "One tree, the same spot, every winter since 2020.",
+      "body": "\u003Cp\u003EThere is a single larch in the field behind the old quarry road. I photograph it every winter from the same place, and every year it looks a little different: more lean, fewer branches, a new scar from the ice.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/blue-snowfield.webp\u0022 alt=\u0022Blue Snowfield, 2024\u0022\u003E\u003Cfigcaption\u003EBlue Snowfield, 2024\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003ELong projects teach you to see small changes. They also teach you that the best picture is often the plainest one: one tree, one horizon, a lot of white.\u003C/p\u003E",
+      "published": true,
+      "likes": 27
+    },
+    {
+      "slug": "notes-from-the-coastal-flight",
+      "title": "Notes from the coastal flight",
+      "date": "2026-09-04",
+      "tags": [
+        "aerial",
+        "coast"
+      ],
+      "cover": "images/works/full/turquoise-lagoon.webp",
+      "excerpt": "Forty minutes in a small plane with the door off.",
+      "body": "\u003Cp\u003EThe pilot banked over Saltmere twice so I could get the lagoon square in the frame. With the door off the wind is loud enough that you stop thinking and just shoot.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/tidal-patterns.webp\u0022 alt=\u0022Tidal Patterns, 2024\u0022\u003E\u003Cfigcaption\u003ETidal Patterns, 2024\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003EFrom the air, tide channels look like drawings. Shoot fast shutter speeds, keep the horizon out, and let the patterns fill the frame.\u003C/p\u003E",
+      "published": true,
+      "likes": 33
+    },
+    {
+      "slug": "a-city-after-rain",
+      "title": "A city after rain",
+      "date": "2026-08-21",
+      "tags": [
+        "night",
+        "city"
+      ],
+      "cover": "images/works/full/city-after-rain.webp",
+      "excerpt": "Why I go out the minute the rain stops.",
+      "body": "\u003Cp\u003ERain doubles every light in a city. The street becomes a mirror, the windows reflect twice, and for half an hour everything glows.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/blue-district.webp\u0022 alt=\u0022Blue District, 2024\u0022\u003E\u003Cfigcaption\u003EBlue District, 2024\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003EI shoot these wide open with the focus pulled slightly off, so the lights turn into soft circles. Sharpness is overrated after dark.\u003C/p\u003E",
+      "published": true,
+      "likes": 52
+    },
+    {
+      "slug": "under-the-galaxy-core",
+      "title": "Under the galaxy core",
+      "date": "2026-08-07",
+      "tags": [
+        "night",
+        "stars"
+      ],
+      "cover": "images/works/full/night-over-the-hills.webp",
+      "excerpt": "Late summer, a clear moor, and twenty-second exposures.",
+      "body": "\u003Cp\u003EThe galaxy core is only well placed for a few weeks each summer here. This year the moor was clear on the last good night.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/star-trail-field.webp\u0022 alt=\u0022Starfield, 2023\u0022\u003E\u003Cfigcaption\u003EStarfield, 2023\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003ETwenty seconds at f/2, ISO 3200, and a red head torch so my eyes stayed adjusted. The faint orange on the horizon is the town fourteen miles away.\u003C/p\u003E",
+      "published": true,
+      "likes": 64
+    },
+    {
+      "slug": "long-exposures-at-corran-head",
+      "title": "Long exposures at Corran Head",
+      "date": "2026-07-24",
+      "tags": [
+        "coast",
+        "technique"
+      ],
+      "cover": "images/works/full/salt-sunset.webp",
+      "excerpt": "Two minutes of shutter turns a restless sea into glass.",
+      "body": "\u003Cp\u003ECorran Head has a sea stack that sits perfectly against the evening sun in July. A ten-stop filter and a two-minute exposure smooth the water completely.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/sea-stack-dawn.webp\u0022 alt=\u0022Sea Stack at Dawn, 2024\u0022\u003E\u003Cfigcaption\u003ESea Stack at Dawn, 2024\u003C/figcaption\u003E\u003C/figure\u003E\u003Ch2\u003ESettings\u003C/h2\u003E\u003Cp\u003Ef/11, 120 seconds, ISO 100, ten-stop filter. Bring a towel for the tripod legs; the tide comes in faster than you think.\u003C/p\u003E",
+      "published": true,
+      "likes": 29
+    },
+    {
+      "slug": "blue-is-the-colour-of-snow",
+      "title": "Blue is the colour of snow",
+      "date": "2026-07-10",
+      "tags": [
+        "snow",
+        "colour"
+      ],
+      "cover": "images/works/full/blue-snowfield.webp",
+      "excerpt": "Before sunrise, snow takes the colour of the sky.",
+      "body": "\u003Cp\u003EPeople are surprised that my winter pictures are so blue. Before the sun rises, snow reflects the sky, and the sky is blue. I leave it that way.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/lone-tree-in-snow.webp\u0022 alt=\u0022Lone Tree in Snow, 2023\u0022\u003E\u003Cfigcaption\u003ELone Tree in Snow, 2023\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003ECorrecting it to white makes a technically neutral picture and a much colder feeling. I would rather keep the hour as it was.\u003C/p\u003E",
+      "published": true,
+      "likes": 18
+    },
+    {
+      "slug": "printing-the-quiet-weather-series",
+      "title": "Printing the Quiet Weather series",
+      "date": "2026-06-26",
+      "tags": [
+        "prints",
+        "studio"
+      ],
+      "cover": "images/works/full/fog-in-the-pines.webp",
+      "excerpt": "Fog is the hardest thing to print well.",
+      "body": "\u003Cp\u003EFog lives in the brightest five percent of the image, which is exactly where cheap paper fails. I tested four papers before choosing a soft matte cotton rag.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/blue-hour-valley.webp\u0022 alt=\u0022Blue Hour Valley, 2024\u0022\u003E\u003Cfigcaption\u003EBlue Hour Valley, 2024\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003EThe final prints are 60 by 90 centimetres, each one checked in daylight before it leaves the studio.\u003C/p\u003E",
+      "published": true,
+      "likes": 22
+    },
+    {
+      "slug": "violet-crossing-and-the-arcade",
+      "title": "Violet Crossing and the arcade",
+      "date": "2026-06-12",
+      "tags": [
+        "night",
+        "city",
+        "colour"
+      ],
+      "cover": "images/works/full/violet-crossing.webp",
+      "excerpt": "One neon sign changed the colour of a whole street.",
+      "body": "\u003Cp\u003EThe arcade on Fenn Street turns its sign on at dusk, and the whole crossing goes violet. I stood on the same corner for three evenings until a tram passed at the right moment.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/harbour-lights.webp\u0022 alt=\u0022Harbour Lights, 2024\u0022\u003E\u003Cfigcaption\u003EHarbour Lights, 2024\u003C/figcaption\u003E\u003C/figure\u003E",
+      "published": true,
+      "likes": 37
+    },
+    {
+      "slug": "low-tide-light",
+      "title": "Low tide light",
+      "date": "2026-05-29",
+      "tags": [
+        "coast",
+        "field notes"
+      ],
+      "cover": "images/works/full/low-tide.webp",
+      "excerpt": "Wet sand is the best reflector on the coast.",
+      "body": "\u003Cp\u003EAt low tide the beach becomes a huge mirror for a few minutes after each wave. I time the shutter to the retreating water.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/sandbar.webp\u0022 alt=\u0022Sandbar, 2023\u0022\u003E\u003Cfigcaption\u003ESandbar, 2023\u003C/figcaption\u003E\u003C/figure\u003E",
+      "published": true,
+      "likes": 15
+    },
+    {
+      "slug": "moonlight-is-just-slow-sunlight",
+      "title": "Moonlight is just slow sunlight",
+      "date": "2026-05-15",
+      "tags": [
+        "night",
+        "mountains",
+        "technique"
+      ],
+      "cover": "images/works/full/moonlit-ridges.webp",
+      "excerpt": "A full moon and an eight-second exposure.",
+      "body": "\u003Cp\u003EMoonlight is reflected sunlight, so a long enough exposure looks almost like day, but quieter. I keep it a little dark so it still feels like night.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/town-glow.webp\u0022 alt=\u0022Town Glow, 2024\u0022\u003E\u003Cfigcaption\u003ETown Glow, 2024\u003C/figcaption\u003E\u003C/figure\u003E",
+      "published": true,
+      "likes": 24
+    },
+    {
+      "slug": "why-i-shoot-the-same-places",
+      "title": "Why I shoot the same places",
+      "date": "2026-05-01",
+      "tags": [
+        "long project",
+        "studio"
+      ],
+      "cover": "images/works/full/still-lake-morning.webp",
+      "excerpt": "Returning is the whole method.",
+      "body": "\u003Cp\u003EMost of my pictures come from six or seven places within two hours of home. Going back teaches me where the light falls in each season and what the weather is about to do.\u003C/p\u003E\u003Cfigure\u003E\u003Cimg src=\u0022images/works/full/first-light-over-the-ridges.webp\u0022 alt=\u0022First Light over the Ridges, 2025\u0022\u003E\u003Cfigcaption\u003EFirst Light over the Ridges, 2025\u003C/figcaption\u003E\u003C/figure\u003E\u003Cp\u003EThe lake in this picture is twenty minutes from my door. I have been there more than a hundred times. This is the morning it was perfectly still.\u003C/p\u003E",
+      "published": true,
+      "likes": 31
+    }
+  ],
+  "comments": [
+    {
+      "id": "c1",
+      "post": "chasing-fog-on-the-north-ridge",
+      "name": "Tomas",
+      "text": "Four mornings for this is worth it. The layers are beautiful.",
+      "date": "2026-10-03",
+      "status": "approved"
+    },
+    {
+      "id": "c2",
+      "post": "chasing-fog-on-the-north-ridge",
+      "name": "Wren",
+      "text": "Which lens did you use for the stacked ridges?",
+      "date": "2026-10-04",
+      "status": "approved"
+    },
+    {
+      "id": "c3",
+      "post": "the-larch-six-winters-on",
+      "name": "Ada",
+      "text": "I love long projects like this. Will you show all six years together?",
+      "date": "2026-09-19",
+      "status": "approved"
+    },
+    {
+      "id": "c4",
+      "post": "a-city-after-rain",
+      "name": "Jun",
+      "text": "Wide open and slightly out of focus is my new favourite idea.",
+      "date": "2026-08-22",
+      "status": "pending"
+    },
+    {
+      "id": "c5",
+      "post": "under-the-galaxy-core",
+      "name": "Mila",
+      "text": "The orange glow on the horizon is such a nice touch.",
+      "date": "2026-08-08",
+      "status": "approved"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "name": "Hollis Grey",
+      "email": "hollis@example.com",
+      "topic": "commission",
+      "text": "Could you photograph our harbour for a book cover next spring?",
+      "date": "2026-10-05",
+      "done": false
+    },
+    {
+      "id": "m2",
+      "name": "Priya N.",
+      "email": "priya@example.com",
+      "topic": "print",
+      "text": "Is Fog in the Pines available as a 60 x 90 print?",
+      "date": "2026-10-01",
+      "done": true
+    }
+  ],
+  "pages": {
+    "home": [
+      {
+        "id": "b1",
+        "type": "hero",
+        "title": "Quiet weather, salt light, cities after dark.",
+        "text": "Landscape photographs by Iris Calloway.",
+        "image": "images/site/hero.webp",
+        "flip": false
+      },
+      {
+        "id": "b2",
+        "type": "text",
+        "title": "Hello",
+        "text": "I photograph the hours most people sleep through: fog before sunrise, the last light on the coast, and towns after rain.\n\nThis site is my portfolio and my notebook. The journal has field notes, settings and the stories behind the pictures.",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "b3",
+        "type": "works",
+        "title": "Selected works",
+        "text": "8",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "b4",
+        "type": "quote",
+        "title": "Iris Calloway",
+        "text": "Returning to the same place is the whole method.",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "b5",
+        "type": "latest",
+        "title": "From the journal",
+        "text": "3",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "b6",
+        "type": "split",
+        "title": "Commissions and prints",
+        "text": "I take a small number of commissions each year, from book covers to hotel collections. Every print is made and checked in my studio.",
+        "image": "images/works/full/sea-stack-dawn.webp",
+        "flip": false
+      },
+      {
+        "id": "b7",
+        "type": "contact",
+        "title": "Working on something?",
+        "text": "Tell me about it. I reply within two days.",
+        "image": "",
+        "flip": false
+      }
+    ],
+    "about": [
+      {
+        "id": "a1",
+        "type": "split",
+        "title": "About Iris",
+        "text": "I am a landscape photographer based in Larch Harbour. I started with a borrowed film camera on the coast and never stopped going back to the same places.\n\nMy work has appeared in travel magazines, book covers and two solo exhibitions.",
+        "image": "images/site/portrait.webp",
+        "flip": false
+      },
+      {
+        "id": "a2",
+        "type": "text",
+        "title": "How I work",
+        "text": "Small kit, long walks, early alarms. I shoot mostly with one body and two lenses, a tripod, and a lot of patience.\n\nI print everything myself on matte cotton paper, so the quiet tones survive from screen to wall.",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "a3",
+        "type": "image",
+        "title": "",
+        "text": "The north trail, where most of the Quiet Weather series began.",
+        "image": "images/site/studio.webp",
+        "flip": false
+      },
+      {
+        "id": "a4",
+        "type": "text",
+        "title": "Exhibitions",
+        "text": "2026  Salt \u0026 Light, Harbour Hall, Larch Harbour\n2025  Quiet Weather, The Long Room, Corran\n2024  Group show, New Northern Photography\n2023  Selected, Coastal Light Open",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "a6",
+        "type": "social",
+        "title": "Follow along",
+        "text": "New work, behind-the-scenes clips and field notes between posts.",
+        "image": "",
+        "flip": false
+      },
+      {
+        "id": "a5",
+        "type": "contact",
+        "title": "Say hello",
+        "text": "Commissions, prints, workshops or just a question about a picture.",
+        "image": "",
+        "flip": false
+      }
+    ]
+  }
+}

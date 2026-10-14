@@ -1,0 +1,16 @@
+<div class="ac-site ac-admin" id="ac-site" data-theme="light" style="{plhd_style}">
+<header class="ac-ahead">
+    <button type="button" class="ac-ibtn ac-burger" aria-label="Menu" onclick="AdminCommentsJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    <a class="ac-abrand" href="Admin"><b>Studio</b> admin</a>
+    <span class="ac-demo" id="ac-demo"></span>
+    <a class="ac-view" href="Home" target="_blank" rel="noopener">View site</a>
+    <button type="button" class="ac-out" onclick="AdminCommentsJs.signOut()">Sign out</button>
+</header>
+<aside class="ac-side" id="ac-nav" aria-label="Admin">
+    <div class="ac-nav-top"><span>Admin</span><button type="button" class="ac-ibtn" aria-label="Close" onclick="AdminCommentsJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <ul class="ac-amenu"><li><a class="ac-al" href="Admin">Dashboard<i class="ac-cnt" id="ac-cnt-Admin"></i></a></li><li><a class="ac-al" href="AdminLayout">Pages<i class="ac-cnt" id="ac-cnt-AdminLayout"></i></a></li><li><a class="ac-al" href="AdminPosts">Journal<i class="ac-cnt" id="ac-cnt-AdminPosts"></i></a></li><li><a class="ac-al" href="AdminWorks">Works<i class="ac-cnt" id="ac-cnt-AdminWorks"></i></a></li><li><a class="ac-al ac-on" href="AdminComments">Comments<i class="ac-cnt" id="ac-cnt-AdminComments"></i></a></li><li><a class="ac-al" href="AdminMessages">Messages<i class="ac-cnt" id="ac-cnt-AdminMessages"></i></a></li><li><a class="ac-al" href="AdminSettings">Settings<i class="ac-cnt" id="ac-cnt-AdminSettings"></i></a></li></ul>
+</aside>
+<div class="ac-scrim" id="ac-scrim" onclick="AdminCommentsJs.closeNav()"></div>
+<div class="ac-toast" id="ac-toast" role="status" aria-live="polite"></div>
+<main class="ac-amain" id="ac-main"><p class="ac-loading">Loading&hellip;</p></main>
+</div>

@@ -1,0 +1,128 @@
+.al-site {
+    --al-bg: #F6F4F0;
+    --al-paper: #FFFFFF;
+    --al-ink: #171717;
+    --al-ink2: #66625C;
+    --al-line: #E2DED7;
+    --al-soft: #ECE8E1;
+    --al-accent: #C8794A;
+    --al-ok: #3F7A57;
+    --al-err: #B3261E;
+    --al-head: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --al-text: 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: var(--al-text);
+    color: var(--al-ink);
+    background: var(--al-bg);
+    font-size: 16px;
+    line-height: 1.65;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.al-site[data-theme="dark"] {
+    --al-bg: #0F0F10;
+    --al-paper: #18181B;
+    --al-ink: #EDEAE4;
+    --al-ink2: #A29D95;
+    --al-line: #2B2B2F;
+    --al-soft: #222226;
+}
+
+.al-site *, .al-site *::before, .al-site *::after { box-sizing: border-box; }
+.al-site a { color: inherit; text-decoration: none; }
+.al-site img { display: block; max-width: 100%; }
+.al-site button, .al-site input, .al-site select, .al-site textarea { font: inherit; color: inherit; }
+.al-site h1, .al-site h2, .al-site h3 { font-family: var(--al-head); font-weight: 500; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+.al-site h1 { font-size: 52px; }
+.al-site h2 { font-size: 32px; }
+.al-site h3 { font-size: 22px; }
+.al-site p { margin: 0; }
+body { margin: 0; }
+.al-main { flex: 1; }
+html.al-hydrating .al-main { visibility: hidden; }
+.al-wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+.al-narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.al-sec { padding-top: 72px; }
+.al-main > section:last-child { padding-bottom: 88px; }
+.al-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--al-ink2); margin-bottom: 12px; }
+.al-site .al-lead { font-size: 19px; color: var(--al-ink2); margin-top: 14px; }
+.al-site .al-mt { margin-top: 32px; }
+.al-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 0 24px; border: 1px solid var(--al-ink); border-radius: 999px; background: var(--al-ink); color: var(--al-bg) !important; font-weight: 600; cursor: pointer; transition: opacity 0.15s; }
+.al-btn:hover { opacity: 0.85; }
+.al-btn-ghost { background: transparent; color: var(--al-ink) !important; }
+.al-btn-wide { width: 100%; }
+.al-ibtn { width: 42px; height: 42px; border: 0; border-radius: 999px; background: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; color: inherit; flex: none; }
+.al-ibtn:hover { background: var(--al-soft); }
+
+.al-head { position: sticky; top: 0; z-index: 60; background: color-mix(in srgb, var(--al-bg) 92%, transparent); border-bottom: 1px solid var(--al-line); }
+.al-head-row { max-width: 1240px; margin: 0 auto; padding: 0 32px; min-height: 68px; display: flex; align-items: center; gap: 18px; }
+.al-brand { font-family: var(--al-head); font-size: 23px; letter-spacing: 0.01em; margin-right: auto; white-space: nowrap; }
+.al-nav { display: flex; }
+.al-nav-top { display: none; }
+.al-menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; }
+.al-ml { display: block; padding: 8px 14px; border-radius: 999px; font-size: 15px; color: var(--al-ink2); }
+.al-ml:hover, .al-ml.al-on { color: var(--al-ink); background: var(--al-soft); }
+.al-burger { display: none; }
+.al-scrim { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.45); opacity: 0; pointer-events: none; transition: opacity 0.2s; z-index: 80; }
+.al-scrim.al-open { opacity: 1; pointer-events: auto; }
+.al-demo-bar:empty { display: none; }
+.al-demo-bar { background: var(--al-accent); color: #fff; text-align: center; font-size: 14px; font-weight: 600; padding: 7px 16px; }
+.al-demo-bar a { text-decoration: underline; }
+
+.al-field { display: flex; flex-direction: column; gap: 6px; }
+.al-field > span { font-size: 13px; font-weight: 700; color: var(--al-ink2); }
+.al-field input, .al-field select, .al-field textarea { width: 100%; min-height: 46px; border: 1px solid var(--al-line); border-radius: 10px; padding: 10px 14px; background: var(--al-paper); outline: none; }
+.al-field input:focus, .al-field select:focus, .al-field textarea:focus { border-color: var(--al-ink); }
+.al-err { display: block; font-style: normal; font-size: 13.5px; color: var(--al-err); font-weight: 600; }
+.al-err:empty { display: none; }
+.al-ok:not(:empty) { padding: 14px 16px; border-radius: 10px; background: color-mix(in srgb, var(--al-ok) 14%, var(--al-paper)); color: var(--al-ink); }
+.al-row2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+
+.al-foot { margin-top: 40px; border-top: 1px solid var(--al-line); }
+.al-foot-in { max-width: 1240px; margin: 0 auto; padding: 40px 32px 24px; display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.al-foot-name { font-family: var(--al-head); font-size: 22px; font-weight: 500; }
+.al-foot-in p { color: var(--al-ink2); }
+.al-foot-links { display: flex; gap: 18px; flex-wrap: wrap; align-items: flex-start; color: var(--al-ink2); }
+.al-foot-links a:hover { color: var(--al-ink); }
+.al-foot-r { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.al-foot-soc { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2px; margin-right: -9px; }
+.al-foot-soc:empty { display: none; }
+.al-soc { width: 38px; height: 38px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; color: var(--al-ink2); transition: color 0.15s, background 0.15s; }
+.al-soc:hover, .al-soc:focus-visible { color: var(--al-accent); background: var(--al-soft); }
+.al-foot-b { max-width: 1240px; margin: 0 auto; padding: 0 32px 28px; font-size: 13px; color: var(--al-ink2); }
+.al-toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 30px); background: var(--al-ink); color: var(--al-bg); padding: 12px 20px; border-radius: 999px; font-weight: 600; opacity: 0; pointer-events: none; transition: opacity 0.25s, transform 0.25s; z-index: 300; max-width: calc(100vw - 32px); }
+.al-toast.al-open { opacity: 1; transform: translate(-50%, 0); }
+
+.al-login { background: #1A1A1C; position: relative; }
+.al-lbg { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.al-lwrap { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; padding: 32px 18px; min-height: 100vh; background: rgba(10, 10, 12, 0.35); }
+.al-lcard { width: min(430px, 100%); background: var(--al-paper); border-radius: 18px; padding: 34px 32px 28px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); }
+.al-lbrand { font-family: var(--al-head); font-size: 18px; color: var(--al-ink2); }
+.al-site .al-lcard h1 { font-size: 36px; }
+.al-site .al-lsub { color: var(--al-ink2); margin-top: -8px; }
+.al-lhint { padding: 12px 14px; border-radius: 10px; background: color-mix(in srgb, var(--al-accent) 12%, var(--al-paper)); font-size: 14.5px; }
+.al-lhint code { font-weight: 700; font-family: Consolas, monospace; }
+.al-lback { text-align: center; font-size: 14px; color: var(--al-ink2); }
+.al-lback:hover { color: var(--al-ink); }
+
+@media (max-width: 900px) {
+    .al-burger { display: inline-flex; }
+    .al-nav { position: fixed; top: 0; right: 0; bottom: 0; width: min(320px, 86vw); background: var(--al-bg); z-index: 90; flex-direction: column; padding: 18px; transform: translateX(100%); transition: transform 0.25s; }
+    .al-nav.al-open { transform: none; }
+    .al-nav-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-weight: 700; }
+    .al-menu { flex-direction: column; }
+    .al-ml { font-size: 22px; font-family: var(--al-head); padding: 12px 8px; border-radius: 8px; }
+}
+
+@media (max-width: 640px) {
+    .al-wrap, .al-head-row, .al-foot-in, .al-foot-b { padding-left: 18px; padding-right: 18px; }
+    .al-site h1 { font-size: 36px; }
+    .al-site h2 { font-size: 26px; }
+    .al-sec { padding-top: 52px; }
+    .al-row2 { grid-template-columns: minmax(0, 1fr); }
+    .al-brand { font-size: 20px; }
+    .al-foot-r { align-items: flex-start; }
+    .al-foot-soc { justify-content: flex-start; margin: 0 0 0 -7px; gap: 2px; }
+    .al-soc { width: 30px; height: 34px; }
+}
