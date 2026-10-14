@@ -25,26 +25,26 @@ var AdminJs = (function () {
     }
 
     function toast(msg) {
-        var t = el('ad-toast');
+        var t = el('db-toast');
         if (!t) {
             return;
         }
         t.textContent = msg;
-        t.classList.add('ad-open');
+        t.classList.add('db-open');
         clearTimeout(ttimer);
         ttimer = setTimeout(function () {
-            t.classList.remove('ad-open');
+            t.classList.remove('db-open');
         }, 3000);
     }
 
     function openNav() {
-        el('ad-nav').classList.add('ad-open');
-        el('ad-scrim').classList.add('ad-open');
+        el('db-nav').classList.add('db-open');
+        el('db-scrim').classList.add('db-open');
     }
 
     function closeNav() {
-        el('ad-nav').classList.remove('ad-open');
-        el('ad-scrim').classList.remove('ad-open');
+        el('db-nav').classList.remove('db-open');
+        el('db-scrim').classList.remove('db-open');
     }
 
     function api(method, list) {
@@ -68,13 +68,13 @@ var AdminJs = (function () {
     }
 
     function openModal() {
-        el('ad-modal').classList.add('ad-open');
+        el('db-modal').classList.add('db-open');
     }
 
     function closeModal() {
-        var m = el('ad-modal');
+        var m = el('db-modal');
         if (m) {
-            m.classList.remove('ad-open');
+            m.classList.remove('db-open');
         }
     }
 
@@ -106,7 +106,7 @@ var AdminJs = (function () {
             }
         });
         document.addEventListener('input', function (e) {
-            var id = e.target && e.target.id ? e.target.id.replace('ad-', 'ad-e-') : '';
+            var id = e.target && e.target.id ? e.target.id.replace('db-', 'db-e-') : '';
             if (id && el(id)) {
                 el(id).textContent = '';
             }

@@ -16,7 +16,7 @@ namespace ArtistBlog.codes
             HtmlDoc.SetTitle("Studio admin | Dashboard");
             HtmlDoc.AddMetaElement("viewport", "width=device-width, initial-scale=1");
             HtmlDoc.AddMetaElement("robots", "noindex, nofollow");
-            HtmlDoc.HtmlBodyText = HtmlDoc.HtmlBodyText.Replace("{plhd_style}", SafeColor(site.Settings.Accent) ? "--ad-accent:" + site.Settings.Accent : string.Empty);
+            HtmlDoc.HtmlBodyText = HtmlDoc.HtmlBodyText.Replace("{plhd_style}", SafeColor(site.Settings.Accent) ? "--db-accent:" + site.Settings.Accent : string.Empty);
         }
 
         private static readonly SemaphoreSlim SessGate = new SemaphoreSlim(1, 1);
@@ -82,10 +82,10 @@ namespace ArtistBlog.codes
         {
             int pc = site.Comments.Count(c => c.Status == "pending");
             int um = site.Messages.Count(m => !m.Done);
-            response.SetElementContents("ad-cnt-AdminComments", pc > 0 ? pc.ToString(CultureInfo.InvariantCulture) : string.Empty);
-            response.SetElementContents("ad-cnt-AdminMessages", um > 0 ? um.ToString(CultureInfo.InvariantCulture) : string.Empty);
+            response.SetElementContents("db-cnt-AdminComments", pc > 0 ? pc.ToString(CultureInfo.InvariantCulture) : string.Empty);
+            response.SetElementContents("db-cnt-AdminMessages", um > 0 ? um.ToString(CultureInfo.InvariantCulture) : string.Empty);
             int left = s.Sbx != string.Empty ? Math.Max(1, (int)Math.Ceiling((Made(s.Sbx).AddMinutes(60) - DateTime.UtcNow).TotalMinutes)) : 0;
-            response.SetElementContents("ad-demo", s.Sbx != string.Empty ? "<span class=\"ad-dl\">Demo copy &middot; resets in </span><span class=\"ad-ds\">Demo &middot; </span>" + left + " min" : string.Empty);
+            response.SetElementContents("db-demo", s.Sbx != string.Empty ? "<span class=\"db-dl\">Demo copy &middot; resets in </span><span class=\"db-ds\">Demo &middot; </span>" + left + " min" : string.Empty);
         }
 
         public async Task<ApiResponse> Load()
@@ -98,7 +98,7 @@ namespace ArtistBlog.codes
                 return response;
             }
             SiteData site = await LoadSite(s.Sbx);
-            response.SetElementContents("ad-main", MainHtml(site, s));
+            response.SetElementContents("db-main", MainHtml(site, s));
             Chrome(response, site, s);
             response.ExecuteScript("AdminJs.loaded();");
             return response;
@@ -133,38 +133,38 @@ namespace ArtistBlog.codes
             int um = site.Messages.Count(m => !m.Done);
             string first = site.Settings.Name.Split(' ', StringSplitOptions.RemoveEmptyEntries).FirstOrDefault() ?? "there";
             StringBuilder sb = new StringBuilder();
-            sb.Append("<div class=\"ad-ptop\"><div><h1>Hello, " + HtmlEncode(first) + "</h1><p>Here is what is happening on " + HtmlEncode(site.Settings.Name) + ".</p></div><div class=\"ad-acts\"><a class=\"ad-btn ad-btn-ghost ad-btn-sm\" href=\"AdminPosts\">Write a post</a><a class=\"ad-btn ad-btn-sm\" href=\"AdminWorks\">Upload photos</a></div></div>");
-            sb.Append("<div class=\"ad-stats\">");
-            sb.Append("<a class=\"ad-stat\" href=\"AdminWorks\"><small>Works</small><b>" + site.Works.Count + "</b><span>" + site.Series.Count + " series</span></a>");
-            sb.Append("<a class=\"ad-stat\" href=\"AdminPosts\"><small>Journal</small><b>" + pub + "</b><span>published &middot; " + drafts + (drafts == 1 ? " draft" : " drafts") + "</span></a>");
-            sb.Append("<a class=\"ad-stat" + (pc > 0 ? " ad-warn" : string.Empty) + "\" href=\"AdminComments\"><small>Comments</small><b>" + pc + "</b><span>waiting for review</span></a>");
-            sb.Append("<a class=\"ad-stat" + (um > 0 ? " ad-warn" : string.Empty) + "\" href=\"AdminMessages\"><small>Messages</small><b>" + um + "</b><span>unread</span></a>");
-            sb.Append("</div><div class=\"ad-grid2\"><div class=\"ad-panel\"><div class=\"ad-ph\"><h2>Waiting for review</h2><a href=\"AdminComments\">All comments</a></div>");
+            sb.Append("<div class=\"db-ptop\"><div><h1>Hello, " + HtmlEncode(first) + "</h1><p>Here is what is happening on " + HtmlEncode(site.Settings.Name) + ".</p></div><div class=\"db-acts\"><a class=\"db-btn db-btn-ghost db-btn-sm\" href=\"AdminPosts\">Write a post</a><a class=\"db-btn db-btn-sm\" href=\"AdminWorks\">Upload photos</a></div></div>");
+            sb.Append("<div class=\"db-stats\">");
+            sb.Append("<a class=\"db-stat\" href=\"AdminWorks\"><small>Works</small><b>" + site.Works.Count + "</b><span>" + site.Series.Count + " series</span></a>");
+            sb.Append("<a class=\"db-stat\" href=\"AdminPosts\"><small>Journal</small><b>" + pub + "</b><span>published &middot; " + drafts + (drafts == 1 ? " draft" : " drafts") + "</span></a>");
+            sb.Append("<a class=\"db-stat" + (pc > 0 ? " db-warn" : string.Empty) + "\" href=\"AdminComments\"><small>Comments</small><b>" + pc + "</b><span>waiting for review</span></a>");
+            sb.Append("<a class=\"db-stat" + (um > 0 ? " db-warn" : string.Empty) + "\" href=\"AdminMessages\"><small>Messages</small><b>" + um + "</b><span>unread</span></a>");
+            sb.Append("</div><div class=\"db-grid2\"><div class=\"db-panel\"><div class=\"db-ph\"><h2>Waiting for review</h2><a href=\"AdminComments\">All comments</a></div>");
             List<PostComment> pending = site.Comments.Where(c => c.Status == "pending").OrderByDescending(c => c.Date).Take(4).ToList();
             foreach (PostComment c in pending)
             {
                 BlogPost? p = site.Posts.FirstOrDefault(x => x.Slug == c.Post);
-                sb.Append("<div class=\"ad-row\"><span class=\"ad-dot\"></span><div><b>" + HtmlEncode(c.Name) + " on " + HtmlEncode(p != null ? p.Title : c.Post) + "</b><small>" + HtmlEncode(c.Text) + "</small></div></div>");
+                sb.Append("<div class=\"db-row\"><span class=\"db-dot\"></span><div><b>" + HtmlEncode(c.Name) + " on " + HtmlEncode(p != null ? p.Title : c.Post) + "</b><small>" + HtmlEncode(c.Text) + "</small></div></div>");
             }
             if (pending.Count == 0)
             {
-                sb.Append("<p class=\"ad-none\">Nothing waiting.</p>");
+                sb.Append("<p class=\"db-none\">Nothing waiting.</p>");
             }
-            sb.Append("</div><div class=\"ad-panel\"><div class=\"ad-ph\"><h2>Latest messages</h2><a href=\"AdminMessages\">Inbox</a></div>");
+            sb.Append("</div><div class=\"db-panel\"><div class=\"db-ph\"><h2>Latest messages</h2><a href=\"AdminMessages\">Inbox</a></div>");
             foreach (Message m in site.Messages.Take(4))
             {
-                sb.Append("<div class=\"ad-row\">" + (m.Done ? string.Empty : "<span class=\"ad-dot\"></span>") + "<div><b>" + HtmlEncode(m.Name) + " &middot; " + HtmlEncode(m.Topic) + "</b><small>" + HtmlEncode(m.Text) + "</small></div><span class=\"ad-st\">" + HtmlEncode(NiceDate(m.Date)) + "</span></div>");
+                sb.Append("<div class=\"db-row\">" + (m.Done ? string.Empty : "<span class=\"db-dot\"></span>") + "<div><b>" + HtmlEncode(m.Name) + " &middot; " + HtmlEncode(m.Topic) + "</b><small>" + HtmlEncode(m.Text) + "</small></div><span class=\"db-st\">" + HtmlEncode(NiceDate(m.Date)) + "</span></div>");
             }
             if (site.Messages.Count == 0)
             {
-                sb.Append("<p class=\"ad-none\">No messages yet.</p>");
+                sb.Append("<p class=\"db-none\">No messages yet.</p>");
             }
-            sb.Append("</div></div><div class=\"ad-grid2\"><div class=\"ad-panel\"><h2>Your site</h2><div class=\"ad-links\"><a href=\"AdminLayout\">Pages<small>Arrange the home and about pages</small></a><a href=\"AdminSettings\">Settings<small>Name, colour, theme, contact</small></a><a href=\"Home\" target=\"_blank\" rel=\"noopener\">View site<small>Opens in a new tab</small></a></div></div>");
+            sb.Append("</div></div><div class=\"db-grid2\"><div class=\"db-panel\"><h2>Your site</h2><div class=\"db-links\"><a href=\"AdminLayout\">Pages<small>Arrange the home and about pages</small></a><a href=\"AdminSettings\">Settings<small>Name, colour, theme, contact</small></a><a href=\"Home\" target=\"_blank\" rel=\"noopener\">View site<small>Opens in a new tab</small></a></div></div>");
             bool prev = File.Exists(Path.Combine(Path.GetDirectoryName(SiteFile(s.Sbx)) ?? Root, "site.prev.json"));
-            sb.Append("<div class=\"ad-panel\"><h2>Versions</h2><p>Every save keeps the version before it. Restore it if something went wrong.</p><div class=\"ad-ver\"><button type=\"button\" class=\"ad-btn ad-btn-ghost ad-btn-sm\" onclick=\"AdminJs.undo()\"" + (prev ? string.Empty : " disabled") + ">Restore last version</button>");
+            sb.Append("<div class=\"db-panel\"><h2>Versions</h2><p>Every save keeps the version before it. Restore it if something went wrong.</p><div class=\"db-ver\"><button type=\"button\" class=\"db-btn db-btn-ghost db-btn-sm\" onclick=\"AdminJs.undo()\"" + (prev ? string.Empty : " disabled") + ">Restore last version</button>");
             if (s.Sbx != string.Empty)
             {
-                sb.Append("<button type=\"button\" class=\"ad-btn ad-btn-ghost ad-btn-sm\" onclick=\"AdminJs.reset()\">Reset demo copy</button>");
+                sb.Append("<button type=\"button\" class=\"db-btn db-btn-ghost db-btn-sm\" onclick=\"AdminJs.reset()\">Reset demo copy</button>");
             }
             sb.Append("</div></div></div>");
             return sb.ToString();
@@ -189,7 +189,7 @@ namespace ArtistBlog.codes
             }
             SiteData old = JsonSerializer.Deserialize<SiteData>(await File.ReadAllTextAsync(prev), ReadOpts) ?? site;
             await SaveSite(old, s.Sbx, true);
-            response.SetElementContents("ad-main", MainHtml(old, s));
+            response.SetElementContents("db-main", MainHtml(old, s));
             Chrome(response, old, s);
             response.ExecuteScript("AdminJs.toast('Previous version restored');");
             return response;
@@ -211,7 +211,7 @@ namespace ArtistBlog.codes
             }
             SiteData fresh = JsonSerializer.Deserialize<SiteData>(await File.ReadAllTextAsync(Path.Combine(DataDir, "site.json")), ReadOpts) ?? site;
             await SaveSite(fresh, s.Sbx, true);
-            response.SetElementContents("ad-main", MainHtml(fresh, s));
+            response.SetElementContents("db-main", MainHtml(fresh, s));
             Chrome(response, fresh, s);
             response.ExecuteScript("AdminJs.toast('Demo copy reset');");
             return response;
